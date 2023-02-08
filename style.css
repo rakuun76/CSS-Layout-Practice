@@ -10,30 +10,24 @@ body {
   margin: 0 auto;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   font-weight: bolder;
 }
 
-.title {
-  font-size: 50px;
-}
-
-.number {
-  font-size: 30px;
-}
-
-.description {
+#info {
   display: flex;
   justify-content: space-between;
+  font-size: 11px;
   margin-bottom: 50px;
 }
 
-.text {
-  width: min-content;
-  font-size: 11px;
+#info > div {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .circle-container {
