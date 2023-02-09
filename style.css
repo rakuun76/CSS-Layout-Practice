@@ -1,55 +1,56 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 body {
-  background-color: #f6f6f6;
-  padding: 50px 25px;
+  background-color: #dde1d4;
+  padding: 15px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  max-width: 770px;
+  max-width: 650px;
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 65% 33%;
+  grid-template-rows: 13% 47% 36%;
+  gap: 2%;
 }
 
 header {
+  grid-column: 1/3;
+  grid-row: 1/2;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: #000000;
+  color: #dde1d4;
+  font-size: 1.2em;
+  padding-bottom: 2%;
+}
+
+#bad {
+  display: flex;
+  align-items: flex-end;
+  background-color: #f14112;
+}
+
+#bad-next {
+  background-color: #f14011;
+}
+
+#religion {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-color: #f14011;
+}
+
+h1 {
+  font-size: 11em;
   font-weight: bolder;
 }
 
-#info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  margin-bottom: 50px;
-}
-
-#info > div {
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.circle-container {
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-.aqua {
-  background-color: aqua;
-}
-
-.bisque {
-  background-color: bisque;
-}
-
-.tomato {
-  background-color: tomato;
+#religion p {
+  color: #dde1d4;
+  font-size: 2em;
+  font-weight: bolder;
 }
