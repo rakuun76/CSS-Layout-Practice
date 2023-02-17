@@ -3,104 +3,38 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: auto;
-  height: 94vh;
-  border: 1vh solid #ec7432;
-  margin: 2vh;
-  background-color: #eee851;
-  text-transform: uppercase;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
   display: grid;
-  grid-template-columns: 35px 1fr 35px;
-  grid-template-rows: 35px 1.2fr 1fr 35px;
-}
-
-section {
-  background-color: white;
-  color: #ec7432;
-  font-size: 1.5em;
-  font-weight: 500;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
-}
-
-section#upper {
-  border-bottom: 1vh solid #ec7432;
-  grid-column: span 3;
-}
-
-section#lower {
-  border-top: 1vh solid #ec7432;
-  grid-column: span 3;
-  grid-row: -2;
-}
-
-nav {
-  font-size: 1em;
-  font-weight: 500;
-  font-style: oblique;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#loc {
-  background-color: #ec7432;
-  color: white;
-  letter-spacing: -5px;
-  border-right: 1vh solid #ec7432;
-  grid-column: 1;
-}
-
-#news {
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  background-color: white;
-  color: #ec7432;
-  border-bottom: 1vh solid #ec7432;
-  border-left: 1vh solid #ec7432;
-  grid-column: 1;
-  grid-row: 3;
-}
-
-#order {
-  background-color: #44a94b;
-  color: white;
-  border-left: 1vh solid #ec7432;
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#res {
-  background-color: #44a94b;
-  color: white;
-  border-top: 1vh solid #ec7432;
-  border-left: 1vh solid #ec7432;
-  grid-column: 3;
-  grid-row: 3;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, 300px);
+  gap: 5px;
 }
 
 div {
-  color: white;
-  font-size: 5em;
-  font-weight: bolder;
-  font-style: normal;
-  text-shadow: 4px 4px 0px #bdbdbd;
-  background-image: url("./image/curry.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  grid-column: 2;
-  grid-row: 2 / 4;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-div span:first-child {
-  font-size: 0.5em;
+section {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  margin: 0 20px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
